@@ -1,155 +1,92 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="FleetStreet Marketing | Elevating your brand with dark, trippy design, viral social media growth, advanced SEO, and website magic. Call 645-223-8691 to boost your digital presence!">
-  <meta name="keywords" content="FleetStreet Marketing, social media growth, website design, SEO services, psychedelic branding, trippy websites, digital marketing, Warner Robins marketing, brand strategy, viral content">
-  <meta name="author" content="FleetStreet Marketing">
-  <title>FleetStreet Marketing | Dark, Trippy, Digital Alchemy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleetstreet Marketing</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=UnifrakturCook:wght@700&display=swap');
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(135deg, #0d0d0d, #1a001a);
-      color: #eee;
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(-45deg, #ff00cc, #3333ff, #00ff99, #ff6600);
+      background-size: 400% 400%;
+      animation: moveBackground 20s ease infinite;
+      color: white;
       overflow-x: hidden;
     }
-    h1, h2, h3 {
-      font-family: 'UnifrakturCook', cursive;
-      text-shadow: 0 0 25px #ff00ff;
+
+    @keyframes moveBackground {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
-    h1 {
-      font-size: 4rem;
-      margin: 2rem 0;
-      text-align: center;
-      animation: glow 3s infinite alternate;
+
+    h1, p, .testimonial, .contact {
+      animation: breathe 6s ease-in-out infinite;
     }
-    @keyframes glow {
-      0% { text-shadow: 0 0 10px #ff00ff; }
-      100% { text-shadow: 0 0 25px #0ff; }
-    }
-    p {
-      font-size: 1.2rem;
-      margin: 1rem auto;
-      width: 80%;
-      line-height: 1.7;
-    }
-    .melting-text {
-      animation: melt 4s infinite alternate;
-      display: inline-block;
-      color: #ff00ff;
-      filter: drop-shadow(0 0 5px #ff00ff);
-    }
-    @keyframes melt {
-      0% { transform: scaleY(1); }
-      100% { transform: scaleY(1.2) skewX(5deg); }
-    }
-    .section {
-      padding: 3rem 1rem;
-      background: rgba(0, 0, 0, 0.6);
-      margin: 2rem 0;
-      transition: background 0.5s ease;
-    }
-    .section:hover {
-      background: rgba(255, 0, 255, 0.1);
-    }
-    .cta-button {
-      display: inline-block;
-      background: linear-gradient(45deg, #000, #ff00ff);
-      color: #0ff;
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
-      border-radius: 20px;
-      box-shadow: 0 0 20px #0ff;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      margin: 2rem auto;
-      animation: pulse 2s infinite;
-    }
-    .cta-button:hover {
-      background: linear-gradient(45deg, #ff00ff, #000);
-      color: #fff;
-      box-shadow: 0 0 30px #ff0;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); }
+
+    @keyframes breathe {
+      0%, 100% { transform: scale(1); }
       50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
     }
-    .social-link {
-      display: inline-block;
-      margin: 1rem;
-      font-size: 1.2rem;
-      color: #fff;
-      text-decoration: none;
-      background: linear-gradient(45deg, #ff00ff, #0ff);
-      padding: 0.7rem 1.5rem;
-      border-radius: 30px;
-      box-shadow: 0 0 20px #ff00ff;
-      transition: transform 0.3s ease;
+
+    .logo {
+      display: block;
+      max-width: 500px;
+      width: 90%;
+      margin: 50px auto;
     }
-    .social-link:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 25px #0ff;
-    }
-    .testimonial {
-      background: rgba(0, 0, 0, 0.5);
-      margin: 1.5rem auto;
-      padding: 1.5rem;
-      max-width: 800px;
-      border-left: 5px solid #0ff;
-      font-style: italic;
-      box-shadow: 0 0 15px #0ff;
-      transform: translateY(0);
-      transition: transform 0.4s ease;
-    }
-    .testimonial:hover {
-      transform: translateY(-10px);
-    }
-    footer {
-      margin-top: 3rem;
-      padding: 2rem 1rem;
-      background: #000;
-      font-size: 1rem;
-      color: #aaa;
+
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
       text-align: center;
-      box-shadow: 0 -5px 20px #ff00ff;
+    }
+
+    .testimonial {
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
+    .contact {
+      margin: 40px 0;
+      font-size: 1.5em;
+      font-weight: bold;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 20px;
     }
   </style>
 </head>
 <body>
-  <h1><span class="melting-text">FleetStreet Marketing</span></h1>
-  <p>Welcome to the dark side of digital. We craft websites that melt minds, engineer social media growth that goes viral, and optimize your SEO to dominate Google. Call <strong>645-223-8691</strong> and let’s awaken your online power.</p>
-  <a class="cta-button" href="tel:6452238691">Call Now to Level Up</a>  <div class="section">
-    <h2>What We Do</h2>
-    <p><strong>Web Design:</strong> Our sites are hypnotic, high-performing, and responsive across all devices. Designed to stand out and convert.</p>
-    <p><strong>Social Media Growth:</strong> Organic virality meets targeted campaigns. We strategize and execute content that turns heads and gains followers fast.</p>
-    <p><strong>SEO:</strong> We don’t just sprinkle keywords. We do deep optimization, schema markup, local SEO, page speed, and backlink building that gets you ranked and clicked.</p>
-  </div>  <div class="section">
-    <h2>Testimonials</h2>
-    <div class="testimonial">“FleetStreet took our IG from 200 to 5k followers in under 2 months. The aesthetic is insane. We get DMs daily now.” – Neon Nova Tattoos</div>
-    <div class="testimonial">“Our old site was boring. Now people say it’s the most unique site in our niche. Traffic doubled.” – Darklight Wellness</div>
-    <div class="testimonial">“SEO wizardry. We went from page 5 to page 1 in 3 weeks. Calls started rolling in.” – Smoke Theory Hookah Lounge</div>
-  </div><a class="social-link" href="https://www.instagram.com/fleetstreetmarketing?igsh=MXFpZ3RvdGY0M2piZQ==" target="_blank">Follow Us on Instagram</a>
+  <img src="/mnt/data/1000000713.png" alt="Fleetstreet Marketing Logo" class="logo">
+  <div class="content">
+    <h1>Welcome to Fleetstreet Marketing</h1>
+    <p>Where creativity drips into reality.</p>
 
-  <footer>
-    &copy; 2025 FleetStreet Marketing | Trippy. Strategic. Viral.
-  </footer>  <script>
-    window.addEventListener("scroll", () => {
-      const header = document.querySelector("h1");
-      const scrollY = window.scrollY;
-      header.style.transform = `translateY(${scrollY * 0.2}px)`;
-    });
+    <div class="testimonial">
+      <h3>Michael Rogerson</h3>
+      <p>"Fleetstreet took my brand to another dimension. Literally mind-blowing work!"</p>
+    </div>
 
-    document.body.addEventListener("mousemove", (e) => {
-      const x = e.clientX / window.innerWidth;
-      const y = e.clientY / window.innerHeight;
-      document.body.style.background = `radial-gradient(circle at ${x * 100}% ${y * 100}%, #0d0d0d, #1a001a)`;
-    });
-  </script></body>
+    <div class="testimonial">
+      <h3>Lu</h3>
+      <p>"Working with them was like watching art come to life. Trippy and effective!"</p>
+    </div>
+
+    <div class="testimonial">
+      <h3>Paris</h3>
+      <p>"Fleetstreet’s vision is insane. Colors, vibes, strategy—10/10 experience."</p>
+    </div>
+
+    <div class="contact">
+      Contact us: 645-223-8691
+    </div>
+  </div>
+</body>
 </html>
+
