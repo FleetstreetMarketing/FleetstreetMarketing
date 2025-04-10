@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,72 +22,62 @@
       100% { background-position: 0% 50%; }
     }
 
-    h1, p, .testimonial, .contact {
-      animation: breathe 6s ease-in-out infinite;
-    }
-
-    @keyframes breathe {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-    }
-
-    .logo {
-      display: block;
-      max-width: 500px;
-      width: 90%;
-      margin: 50px auto;
-    }
-
-    .content {
-      max-width: 1000px;
-      margin: 0 auto;
+    .inline-container {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-around;
       padding: 20px;
+    }
+
+    .inline-container > * {
+      margin: 0 10px;
       text-align: center;
     }
 
-    .testimonial {
+    .logo {
+      max-width: 150px;
+      height: auto;
+    }
+
+    .testimonial, .contact {
       background: rgba(0, 0, 0, 0.6);
       border-radius: 20px;
-      padding: 20px;
-      margin: 20px 0;
+      padding: 10px;
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     }
 
-    .contact {
-      margin: 40px 0;
-      font-size: 1.5em;
-      font-weight: bold;
-      background: rgba(0, 0, 0, 0.7);
-      padding: 20px;
-      border-radius: 20px;
+    h1, p {
+      margin: 0;
+    }
+
+    .testimonial h3 {
+      margin-top: 0;
     }
   </style>
 </head>
 <body>
-  <img src="/mnt/data/1000000713.png" alt="Fleetstreet Marketing Logo" class="logo">
-  <div class="content">
-    <h1>Welcome to Fleetstreet Marketing</h1>
-    <p>Where creativity drips into reality.</p>
-
+  <div class="inline-container">
+    <img src="/mnt/data/1000000713.png" alt="Fleetstreet Marketing Logo" class="logo">
+    <div>
+      <h1>Welcome to Fleetstreet Marketing</h1>
+      <p>Where creativity drips into reality.</p>
+    </div>
     <div class="testimonial">
       <h3>Michael Rogerson</h3>
       <p>"Fleetstreet took my brand to another dimension. Literally mind-blowing work!"</p>
     </div>
-
     <div class="testimonial">
       <h3>Lu</h3>
       <p>"Working with them was like watching art come to life. Trippy and effective!"</p>
     </div>
-
     <div class="testimonial">
       <h3>Paris</h3>
       <p>"Fleetstreet’s vision is insane. Colors, vibes, strategy—10/10 experience."</p>
     </div>
-
     <div class="contact">
       Contact us: 645-223-8691
     </div>
   </div>
 </body>
 </html>
-
